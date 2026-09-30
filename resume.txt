@@ -1,0 +1,81 @@
+ISHA VIKRANT GAONKAR
+501 E. 32nd St, Chicago, IL 60616 | (312) 285-7116 | ishha7datasci@gmail.com
+LinkedIn: linkedin.com/in/isha-gaonkar-30bb0b244 | GitHub: github.com/ishaa-25
+
+QUALIFICATIONS SUMMARY
+Focused and results-driven Data Scientist and AI Engineer with an M.S. in Data Science and 3+ years of progressive technical experience architecting predictive models, streaming data pipelines, and scalable machine learning infrastructure. Proven track record orchestrating distributed data processing across 1.2M+ records, deploying real-time signal and data ingestion pipelines under sub-800ms SLAs, and engineering multi-agent LLM systems and automated recommendation engines.
+
+KEY COMPETENCIES
+• Predictive Analytics & Statistical Modeling: Applied regression, time-series forecasting, supervised/unsupervised machine learning, cost-sensitive classification, hypothesis testing (ANOVA, t-tests).
+• Data Engineering & ETL Workflows: Advanced SQL (PostgreSQL, CTEs, window functions), Apache Spark (PySpark), Kafka, Databricks, Docker, automated schema validation.
+• Artificial Intelligence & Systems: Large Language Models (LLMs), LangGraph, Model Context Protocol (MCP), Retrieval-Augmented Generation (RAG), vector representations, model-serving REST APIs.
+• Data Quality & Governance: RapidFuzz entity deduplication, automated testing gates, SHAP interpretability, Tableau/Streamlit dashboarding, audit-ready data tracking.
+
+EMPLOYMENT HISTORY
+AI Engineer Intern | Twinmo.ai | Chicago, IL                              Feb 2026 – Apr 2026
+• Built LangGraph agentic pipelines on AWS to parse 200+ regulatory PDFs, lifting extraction accuracy from 77% → 95% and cutting turnaround from 2 hours to 5 mins.
+• Developed an ensemble doneness-prediction model (ARIMA, XGBoost, LSTM), achieving 92% accuracy with an RMSE of 1.8 min in production.
+• Improved cross-domain model generalization by 35% across 5 real-world datasets through targeted feature engineering and bias-variance calibration.
+• Deployed containerized model-serving endpoints and REST APIs integrated into cloud infrastructure (AWS Lambda, S3, API Gateway).
+
+Data Science Co-op / Consultant | Labelmaster | Chicago, IL              Jan 2026 – Apr 2026
+• Architected an automated recommendation engine combining LLM embeddings and hazard classes (1–9), unlocking $370K in uncaptured revenue.
+• Implemented RapidFuzz entity matching at an 85% threshold across 75K+ commercial accounts over 7 years, cutting pipeline discrepancies by 20%.
+• Designed a neighbor-site validation layer using a 0.3 similarity threshold to corroborate automated prescriptions against historical purchasing data.
+• Established reproducible data lineage and dataset versioning controls to guarantee auditability and regulatory compliance.
+
+Data Scientist | SoundSafe.ai | Chicago, IL                               Aug 2025 – Nov 2025
+• Engineered real-time data ingestion and signal processing pipelines using Python and FastAPI WebSockets for high-frequency streaming inputs (16 kHz mono PCM).
+• Validated and calibrated deep learning models (PyTorch) for real-time deepfake detection, achieving 95% TPR at 1% FPR with sub-800ms latency.
+• Containerized machine learning workflows using Docker + CI/CD; implemented model monitoring via SHA-256 hash-chained audit logs.
+
+Data Scientist | Oasis Infobyte | New Delhi, India                        Jan 2024 – Aug 2024
+• Conducted statistical data analysis, regression modeling, and time-series forecasting across 75,000+ transactional records.
+• Refactored legacy relational database queries using PostgreSQL CTEs, window functions, and indexing strategies to cut query runtime by 25%.
+• Trained and tuned gradient-boosted decision tree models (XGBoost), boosting operational forecasting precision by 20%.
+
+AI Engineer Intern | SmartKnower | Bangalore, India                       Aug 2022 – Sep 2022
+• Conducted exploratory data analysis, feature engineering, and PCA dimensionality reduction for deep learning classification models (TensorFlow), reducing feature space by 40% while retaining 94% variance.
+• Designed interactive Tableau reporting dashboards integrated with SHAP (SHapley Additive exPlanations) values.
+
+ACADEMIC EDUCATION & HONORS
+Illinois Institute of Technology | Chicago, IL                           Aug 2024 – May 2026
+Master of Science in Data Science | Cumulative GPA: 3.18 / 4.00
+Relevant Coursework: Machine Learning, Natural Language Processing, Statistical Modeling, Big Data Technologies, Data Preparation & Analysis, Regression Analysis, Monte Carlo Simulation Methods.
+
+Atharva College of Engineering, University of Mumbai | Mumbai, India     Aug 2020 – May 2024
+Bachelor of Engineering in Computer Science | Cumulative GPA: 9.38 / 10.00
+Academic Honors: Consistently ranked in the top 5% of the computer engineering graduating class.
+
+JOB-RELATED CERTIFICATIONS & SPECIALIZED TRAINING
+• Certified Generative AI Architect with Knowledge Graphs | Udemy (Credential ID: UC-6d4acb4e-522b-4f0b-b1d6-7f89d700f0c8)
+• AWS Cloud Technical Essentials | Amazon Web Services (Issued: Dec 2025; Credential ID: E38M5OR5YE2S)
+• Introduction to Information Technology and AWS Cloud | Amazon Web Services (Issued: Jun 2025; Credential ID: PCYIJU6WK60W)
+• Google Cloud Platform Developer Campaign | Google Cloud (Completed: Dec 2022; 30 hours of hands-on cloud engineering labs)
+
+FELLOWSHIPS & APPLIED SIMULATION TRAINING
+• Data Science Fellow | The Build Fellowship (Open Avenues Foundation) (March 2025 – April 2025)
+  - Analyzed and visualized sex-disaggregated public health datasets applying ethical data design frameworks.
+  - Audited 15 public health data visual assets, delivering 3 comprehensive reports; improved visual data clarity by 40% (90% peer review score).
+• Generative AI Job Simulation | Boston Consulting Group (Forage) (July 2025)
+  - Developed an AI-powered financial assistant using NLP intent recognition, automating responses to 50+ standardized inquiries (+15% decision accuracy).
+• Data Science Job Simulation | British Airways (Forage) (June 2025)
+  - Modeled customer lounge eligibility (+18% accuracy) and modeled purchasing behavior with XGBoost (+12% simulated upsell potential).
+
+RESEARCH PUBLICATIONS
+• Paper Publication (2024): "SAKHI (Supportive Assistant Keeping Hope Intact): An Intelligent Framework for Adaptive Behavioral Health Tracking."
+  - Conference: International Conference on Science, Technology, Engineering & Mathematics Sustainable Development (ICSTEMSD 2024 – 2nd Edition).
+
+VOLUNTEER EXPERIENCE & COMMUNITY LEADERSHIP
+Documentation Head & Lead Volunteer | National Service Scheme (NSS), India | Atharva Chapter, Mumbai (Sep 2021 – Apr 2023)
+• Total Service Hours Logged: 240+ Hours.
+• Led documentation team of 6 members across 20+ community service projects; trained/mentored 100+ junior student volunteers.
+• Organized 7-day rural educational outreach camp (Atgaon), Dharivali village adoption, Mission Green Mumbai tree plantation, and coastal cleanups.
+
+TECHNICAL PROJECTS ADDENDUM
+• AllergyGuard AI Safety & Regulatory Compliance Agent (May 2026): 5th Place Overall, Claude Builders Hackathon. Co-designed autonomous AI compliance agent utilizing Claude 3.7 Vision and Anthropic's Model Context Protocol (MCP).
+• Large-Scale E-Commerce Streaming & Analytics Pipeline (Feb 2025 – Mar 2025): Distributed streaming pipeline combining Apache Kafka and PySpark across 1,000,000+ transactional records, cutting latency by 45%.
+• Production Distributed ML Pipeline (Oct 2025 – Dec 2025): End-to-end predictive classification across 1.2M+ records using PySpark, cost-sensitive loss, and ONNX Runtime scoring.
+• Transformer Semantic Representation Engine (Jul 2025 – Aug 2025): Fine-tuned MiniLM on 50,000 synthetic pairs via Contrastive Loss, lifting accuracy from 89% to 94% (MRR +0.08).
+• Autonomous AML/Fraud Copilot: RDF graph analytics, semantic vector retrieval (FAISS), and multi-agent LLM orchestration for automated SAR narrative generation.
+• Discharge Clarity Assistant: Healthcare AI MVP converting complex hospital discharge instructions into patient-friendly care plans via OpenAI API.
