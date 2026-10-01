@@ -63,7 +63,7 @@ const education = [
   },
   {
     title: "Bachelor of Engineering in Computer Science",
-    company_name: "Atharva College of Engineering, Mumbai, India",
+    company_name: "University of Mumbai, India",
     icon: web,
     iconBg: "#fff",
     date: "Aug 2020 - May 2024",
