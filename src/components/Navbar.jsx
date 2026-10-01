@@ -103,7 +103,7 @@ const Navbar = () => {
                 textFillColor: "transparent",
               }} 
             >
-              {"</"}Isha Gaonkar{">"}
+              Isha Gaonkar
             </span>
           </motion.p>
         </Link>

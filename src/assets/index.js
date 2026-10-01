@@ -66,8 +66,6 @@ import sk from "./company/sk.png";
 import axelotlanding from "./axelotlanding.png"
 import netdashlanding from "./netdashlanding.png"
 import securebankdashboard from "./securebankdash.jpg"
-import sunnifyimage from "./demonstration 2.jpg"
-import knifethrowimage from "./knifethrow_demonstration.jpg"
 import allergyguard from "./tech/ag.png";
 import knowledgegraph from "./tech/grapgh.png";
 import dischargeclarity from "./tech/dca.png";
@@ -114,8 +112,6 @@ export {
   axelotlanding,
   netdashlanding,
   securebankdashboard,
-  sunnifyimage,
-  knifethrowimage,
   pythonanalysis,
   allergyguard,
   knowledgegraph,

@@ -80,6 +80,12 @@ const About = () => {
             <div className="w-full h-full overflow-hidden">
               {movingavatar ? (
                 <video
+                  ref={(el) => {
+                    if (el) el.playbackRate = 0.5;
+                  }}
+                  onLoadedMetadata={(e) => {
+                    e.target.playbackRate = 0.5;
+                  }}
                   src={movingavatar}
                   autoPlay
                   loop

@@ -13,7 +13,7 @@ import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser, faEnvelope, faComment, faPaperPlane, faSpinner, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faUser, faEnvelope, faComment, faPaperPlane, faSpinner } from "@fortawesome/free-solid-svg-icons"
 
 const Contact = () => {
   const formRef = useRef()
@@ -76,7 +76,7 @@ const Contact = () => {
     }
 
     if (!captchaToken) {
-      toast("Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖", {
+      toast("Please complete the CAPTCHA verification! 🧠🤖", {
         icon: "🛡️",
         duration: 3500,
         position: "bottom-right",
@@ -86,10 +86,15 @@ const Contact = () => {
 
     setLoading(true)
 
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN || import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+    // If EmailJS keys are configured, send via EmailJS
+    if (serviceId && templateId && publicKey && serviceId !== "<service_id>") {
+      const emailPromise = emailjs.send(
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Isha Gaonkar",
@@ -97,10 +102,16 @@ const Contact = () => {
           to_email: "ishha7datasci@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN,
+        publicKey,
       )
-      .then(
-        () => {
+
+      // 10s safety timeout to prevent infinite spinning
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Timeout")), 10000)
+      )
+
+      Promise.race([emailPromise, timeoutPromise])
+        .then(() => {
           setLoading(false)
           setSuccess(true)
           setForm({ name: "", email: "", message: "" })
@@ -110,21 +121,39 @@ const Contact = () => {
           })
           setShowConfetti(true)
           setCaptchaToken(null)
-          captchaRef.current.reset()
+          if (captchaRef.current) captchaRef.current.reset()
           setTimeout(() => {
             setSuccess(false)
             setShowConfetti(false)
           }, 5000)
-        },
-        (error) => {
+        })
+        .catch((error) => {
           setLoading(false)
-          console.error(error)
-          toast.error("Something went wrong. Please try again.", {
-            duration: 3000,
+          console.error("EmailJS Error:", error)
+          // Fallback to mailto
+          window.location.href = `mailto:ishha7datasci@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.email)}`
+          toast("Opening your email client to send message...", {
+            icon: "✉️",
+            duration: 4000,
             position: "bottom-right",
           })
-        },
-      )
+        })
+    } else {
+      // Direct mailto fallback if EmailJS keys are not yet configured in environment
+      setTimeout(() => {
+        setLoading(false)
+        setSuccess(true)
+        window.location.href = `mailto:ishha7datasci@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.email)}`
+        toast.success("Opening your email app to send to Isha!", {
+          duration: 4000,
+          position: "bottom-right",
+        })
+        setForm({ name: "", email: "", message: "" })
+        setCaptchaToken(null)
+        if (captchaRef.current) captchaRef.current.reset()
+        setTimeout(() => setSuccess(false), 4000)
+      }, 500)
+    }
   }
 
   const handleConfettiComplete = useCallback(() => {
@@ -147,15 +176,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="w-full lg:w-1/2 flex-1 neon-white-card p-6 sm:p-8 md:p-10 rounded-2xl"
       >
-        <div className="flex justify-between items-center mb-4">
+        <div className="mb-4">
           <p className={styles.sectionSubText}>Get in touch</p>
-          <a
-            href="tel:+13122857116"
-            className="text-purple-400 hover:text-purple-300 transition-all duration-300 flex items-center gap-2 hover:gap-3 group"
-          >
-            <FontAwesomeIcon icon={faPhone} className="group-hover:rotate-12 transition-transform duration-300" />
-            <span className="font-medium">(312) 285-7116</span>
-          </a>
         </div>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 

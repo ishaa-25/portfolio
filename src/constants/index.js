@@ -16,8 +16,6 @@ import {
   axelotlanding,
   netdashlanding,
   securebankdashboard,
-  sunnifyimage,
-  knifethrowimage,
   atsscreenerlanding,
   allergyguard,
   knowledgegraph,
