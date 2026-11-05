@@ -70,6 +70,7 @@ import allergyguard from "./tech/ag.png";
 import knowledgegraph from "./tech/grapgh.png";
 import dischargeclarity from "./tech/dca.png";
 import pythonanalysis from "./data_analysis.png";
+import M5 from ".M5.png";
 import financialflowimage from "./FinancialFlowDemonstration.png";
 // import password_generator from "./passwordgenerator.png"
 // import wordsearch from "./wordsearchoutput.jpg"  // unused - commented out in constants

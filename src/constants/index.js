@@ -187,19 +187,19 @@ const extracurricular = [
       "Integrated machine learning classification, real-time survey evaluation, and accessible user interfaces for behavioral health tracking."
     ],
     credential: "https://icstemsd.org/",
-  },
-  {
-    title: "Documentation Head & Lead Volunteer",
-    icon: fullstack,
-    type: "Community Leadership | NSS India (Atharva Chapter)",
-    category: "Leadership",
-    date: "Sep 2021 – Apr 2023 | 240+ Hours",
-    points: [
-      "Led a 6-member documentation team over 20+ projects, and mentored 100+ junior student volunteers in reporting standards.",
-      "Spearheaded 7-day rural outreach camp (Atgaon), Dharivali village adoption, Mission Green Mumbai, and coastal beach cleanups."
-    ],
-    credential: "https://nss.gov.in/",
-  },
+  }
+  // {
+  //   title: "Documentation Head & Lead Volunteer",
+  //   icon: fullstack,
+  //   type: "Community Leadership | NSS India",
+  //   category: "Leadership",
+  //   date: "Sep 2021 – Apr 2023 | 240+ Hours",
+  //   points: [
+  //     "Led a 6-member documentation team over 20+ projects, and mentored 100+ junior student volunteers in reporting standards.",
+  //     "Spearheaded 7-day rural outreach camp (Atgaon), Dharivali village adoption, Mission Green Mumbai, and coastal beach cleanups."
+  //   ],
+  //   credential: "https://nss.gov.in/",
+  // },
 ];
 
 const testimonials = [];
@@ -222,7 +222,7 @@ const experiences = [
     company_name: "Twinmo.ai",
     icon: twinmo,
     iconBg: "#fff",
-    date: "Feb 2026 - Present",
+    date: "Feb 2026 - Apr 2026",
     points: [
       "Built LangGraph agentic pipelines on AWS to parse 200+ regulatory PDFs, lifting extraction accuracy from 77% → 95% and cutting turnaround from 2 hours to 5 mins.",
       "Developed an ensemble doneness-prediction model (ARIMA, XGBoost, LSTM), achieving 92% accuracy with an RMSE of 1.8 min in production.",
@@ -268,6 +268,19 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Hierarchical Forecasting Platform - M5 Walmart",
+    description:
+      "Developed a hierarchical probabilistic forecasting platform for 42K daily sales series (LightGBM/Chronos, 0.24 WAPE, 31% better than baselines). Built with 30+ engineered features, Optuna tuning, SHAP explanations, split-conformal intervals, and MinT reconciliation—delivered via an interactive Streamlit app featuring drill-downs, forecast fans, and LLM-driven insights.",
+    tags: [
+      { name: "LightGBM", color: "pink-text-gradient" },
+      { name: "TimeSeries", color: "green-text-gradient" },
+      { name: "Chronos", color: "blue-text-gradient" },
+    ],
+    image: M5,
+    source_code_link: "https://github.com/ishaa-25/m5-forecasting-platform",
+    
+  },
   {
     name: "Allergy Guard",
     description:
