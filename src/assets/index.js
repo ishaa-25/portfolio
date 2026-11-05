@@ -64,17 +64,17 @@ import oi from "./company/oi.png";
 import sk from "./company/sk.png";
 
 import axelotlanding from "./axelotlanding.png"
-import netdashlanding from "./netdashlanding.png"
-import securebankdashboard from "./securebankdash.jpg"
+
+
 import allergyguard from "./tech/ag.png";
 import knowledgegraph from "./tech/grapgh.png";
 import dischargeclarity from "./tech/dca.png";
 import pythonanalysis from "./data_analysis.png";
-import M5 from ".M5.png";
-import financialflowimage from "./FinancialFlowDemonstration.png";
+import m5 from "./tech/M5.png";
+
 // import password_generator from "./passwordgenerator.png"
 // import wordsearch from "./wordsearchoutput.jpg"  // unused - commented out in constants
-import atsscreenerlanding from "./atsscreenerlanding.png"
+import atsscreenerlanding from "./atsscreenerlanding.png";
 // import enterpriseapitester from "./enterpriseapiui.png"
 
 // Use the stable route; dev/prod redirect to /resume/<basename>
@@ -107,12 +107,11 @@ export {
   rhhs,
   wonderland,
   mackenziehealth,
+  m5,
   privcurity,
   google,
   whmis,
   axelotlanding,
-  netdashlanding,
-  securebankdashboard,
   pythonanalysis,
   allergyguard,
   knowledgegraph,
@@ -140,7 +139,7 @@ export {
   resume,
   awsdbcert,
   connectwisecert,
-  financialflowimage,
+
   atsscreenerlanding,
   // enterpriseapitester,
   profilepic,

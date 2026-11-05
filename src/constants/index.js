@@ -14,14 +14,12 @@ import {
   cplusplus,
   typescript,
   axelotlanding,
-  netdashlanding,
-  securebankdashboard,
   atsscreenerlanding,
   allergyguard,
   knowledgegraph,
   dischargeclarity,
   pythonanalysis,
-  financialflowimage,
+  m5,
   lm,
   twinmo,
   ss,
@@ -277,9 +275,9 @@ const projects = [
       { name: "TimeSeries", color: "green-text-gradient" },
       { name: "Chronos", color: "blue-text-gradient" },
     ],
-    image: M5,
+    image: m5,
     source_code_link: "https://github.com/ishaa-25/m5-forecasting-platform",
-    
+
   },
   {
     name: "Allergy Guard",
@@ -319,18 +317,7 @@ const projects = [
     source_code_link: "https://github.com/ishaa-25/fine-tuning-build-project-public",
     live_project_link: "https://huggingface.co",
   },
-  {
-    name: "Large-Scale E-Commerce Streaming Pipeline",
-    description:
-      "Built a distributed streaming data pipeline combining Apache Kafka and Apache Spark (PySpark) to ingest and process 1,000,000+ transactional e-commerce records, cutting latency by 45% with interactive KPI dashboards.",
-    tags: [
-      { name: "Apache Spark", color: "blue-text-gradient" },
-      { name: "Kafka", color: "green-text-gradient" },
-      { name: "Plotly", color: "pink-text-gradient" },
-    ],
-    image: financialflowimage,
-    source_code_link: "https://github.com/ishaa-25",
-  },
+
   {
     name: "Production ML Pipeline",
     description:
