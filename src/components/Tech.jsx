@@ -52,30 +52,30 @@ const itTools = [
   { name: "Ubuntu", icon: ubuntu },
   { name: "PowerShell", icon: powershell },
   { name: "Azure", icon: azure },
-  { name: "Cisco", icon: cisco },
-  { name: "ConnectWise", icon: connectwise },
+  // { name: "Cisco", icon: cisco },
+  // { name: "ConnectWise", icon: connectwise },
   { name: "VirtualBox", icon: virtualbox },
   { name: "Kali Linux", icon: kalilinux },
   { name: "Wireshark", icon: wireshark },
-  { name: "Nmap", icon: nmap },
-  { name: "John the Ripper", icon: johntheripper },
+  // { name: "Nmap", icon: nmap },
+  // { name: "John the Ripper", icon: johntheripper },
 ];
 
-const contentProduction = [
-  { name: "Photoshop", icon: photoshop },
-  { name: "Premiere Pro", icon: premiere },
-  { name: "Cinema 4D", icon: cinema4d },
-];
+// const contentProduction = [
+//   { name: "Photoshop", icon: photoshop },
+//   { name: "Premiere Pro", icon: premiere },
+//   { name: "Cinema 4D", icon: cinema4d },
+// ];
 
 const Tech = () => {
   const [rows, setRows] = useState({
     programming: [],
     itTools: [],
-    contentProduction: [],
+    // contentProduction: [],
   });
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { 
+  const isInView = useInView(ref, {
     once: true,
     amount: 0.2
   });
@@ -116,7 +116,7 @@ const Tech = () => {
       const rowsData = {
         programming: calculateRows(window.innerWidth, programming),
         itTools: calculateRows(window.innerWidth, itTools),
-        contentProduction: calculateRows(window.innerWidth, contentProduction),
+        // contentProduction: calculateRows(window.innerWidth, contentProduction),
       };
       setRows(rowsData);
     };
@@ -133,14 +133,14 @@ const Tech = () => {
 
   const hexagonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
-      transition: { 
-        delay: Math.random() * 1.5, 
-        duration: 0.5, 
-        type: "spring" 
-      } 
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: Math.random() * 1.5,
+        duration: 0.5,
+        type: "spring"
+      }
     },
     hover: {
       scale: 1.05,
@@ -176,7 +176,7 @@ const Tech = () => {
           textFillColor: "transparent",
           filter: "drop-shadow(0 0 10px #915EFF)",
         }}
-      >{`<${categoryName}>`}</motion.h2>
+      >{categoryName }</motion.h2>
       <div className="honeycomb-grid">
         {categoryRows?.map((row, rowIndex) => (
           <div
@@ -192,7 +192,7 @@ const Tech = () => {
                 animate="visible"
                 whileHover="hover"
               >
-                <img src={tech.icon} alt={tech.name}  style={{ userSelect: "none" }} draggable="false"/>
+                <img src={tech.icon} alt={tech.name} style={{ userSelect: "none" }} draggable="false" />
               </motion.div>
             ))}
           </div>
@@ -214,7 +214,7 @@ const Tech = () => {
           textFillColor: "transparent",
           filter: "drop-shadow(0 0 10px #915EFF)",
         }}
-      >{`</${categoryName}>`}</motion.h2>
+      >{categoryName}</motion.h2>
     </motion.div>
   );
 
@@ -227,7 +227,7 @@ const Tech = () => {
         </motion.div>
         {renderCategory("programming", rows.programming)}
         {renderCategory("itTools", rows.itTools)}
-        {renderCategory("contentProduction", rows.contentProduction)}
+        {/* {renderCategory("contentProduction", rows.contentProduction)}*/}
       </div>
     </section>
   );
