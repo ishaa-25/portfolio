@@ -61,9 +61,9 @@ import lm from "./company/lm.png";
 import twinmo from "./company/twinmo.png";
 import ss from "./company/ss.png";
 import oi from "./company/oi.png";
-import sk from "./company/sk.png";
+import kpmg from "./company/kpmg_logo.jpg";
 
-import axelotlanding from "./axelotlanding.png"
+import axelotlanding from "./axelotlanding.png";
 
 
 import allergyguard from "./tech/ag.png";
@@ -154,5 +154,6 @@ export {
   twinmo,
   ss,
   oi,
-  sk
+  kpmg
+  
 };
