@@ -242,27 +242,21 @@ const experiences = [
   },
   {
     title: "Data Scientist",
-    company_name: "Oasis Infobyte",
+    company_name: "KPMG",
     icon: oi,
     iconBg: "#fff",
     date: "Jan 2024 - Aug 2024",
     points: [
-      "Constructed XGBoost forecasting models on 75,000+ financial records with hyperparameter tuning and cross-validation.",
-      "Boosted operational efficiency by 20% across 3 business units, cutting reporting turnaround by 20%.",
-      "Spearheaded A/B tests on automated vs. manual workflows; translated evaluation metrics into actionable business decisions.",
+      "Developed and optimized supervised machine learning models using Python, Scikit-learn, XGBoost, and Random Forest, improving predictive model performance by 25% through feature engineering, hyperparameter tuning, and cross-validation.",
+      "Engineered data preparation and feature selection workflows using Pandas, NumPy, and Scikit-learn, reducing processing time by 35%, and developed an FP-Growth recommendation system to identify frequent service combinations and cross-selling opportunities from historical client transactions.",
+      "Built NLP-powered enterprise knowledge assistants using LLMs, LangChain, and Retrieval-Augmented Generation (RAG), enhancing document retrieval accuracy by 30% through semantic search, embedding generation, and contextual retrieval.",
+      "Conducted model evaluation using precision, recall, F1-score, confusion matrices, and cross-validation, improving model reliability by 20% through systematic performance analysis and optimization.",
+      "Implemented MLOps workflows using Docker, CI/CD pipelines, and REST APIs, reducing model deployment time by 40% and refining deployment efficiency across enterprise AI applications.",
+      "Led cross-functional Agile data science initiatives across 10+ model releases and analytical deployments, coordinating technical design reviews, business requirements, statistical validation, stakeholder presentations, deployment, and production monitoring to improve on-time delivery from 85% to 99%.",
+
     ],
   },
-  {
-    title: "Artificial Intelligence Intern",
-    company_name: "SmartKnower",
-    icon: sk,
-    iconBg: "#fff",
-    date: "Aug 2022 - Sep 2022",
-    points: [
-      "Optimized TensorFlow models via PCA-based feature engineering (40% feature reduction, 94% variance retained).",
-      "Accelerated training by 25%; built Bias Detection-integrated dashboards raising stakeholder confidence by 25%.",
-    ],
-  },
+
 ];
 
 const projects = [
